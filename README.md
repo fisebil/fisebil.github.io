@@ -1,3 +1,17 @@
+# BK NOTES
+
+
+```
+# go to parent dir
+npx create-next-app --example gh-pages fisebil.github.io
+cd fisebil.github.io
+npm run deploy
+```
+
+Change GitHub pages settings to publish branch **gh_pages**.
+
+
+
 # gh-pages Hello World example
 
 This example shows the most basic idea behind Next. We have 2 pages: `pages/index.js` and `pages/about.js`. The former responds to `/` requests and the latter to `/about`. Using `next/link` you can add hyperlinks between them with universal routing capabilities.
