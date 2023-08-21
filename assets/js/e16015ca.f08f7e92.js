@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfisebil_github_io=self.webpackChunkfisebil_github_io||[]).push([[9700],{3640:l=>{l.exports=JSON.parse('{"label":"hola","permalink":"/blog/tags/hola","allTagsPath":"/blog/tags","count":1}')}}]);
