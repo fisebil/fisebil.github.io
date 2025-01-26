@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Fi-Sebil',
-  tagline: 'Fi-Sebilillah',
+  title: 'Fî Sebil',
+  tagline: 'Fî Sebilillah',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
