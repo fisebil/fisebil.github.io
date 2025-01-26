@@ -78,17 +78,17 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Home',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Fisebil Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'fisebilSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -105,7 +105,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Docs',
                 to: '/docs/intro',
               },
             ],
