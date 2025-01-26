@@ -1,41 +1,24 @@
-# Website
+# Installation
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+See https://docusaurus.io/docs/installation
 
-### Installation
-
-```
-$ yarn
+```zsh
+npx create-docusaurus@latest fisebil.github.io classic
 ```
 
-### Local Development
+# Deployment
 
+See https://docusaurus.io/docs/deployment for deploying to GitHub Pages (and other hosting providers).
+
+Building with **yarn** caused problems in GitHub Actions, so I switched to use of **npm** instead.
+* Changed `.github/workflows/deploy.yml` and `test-deploy.yml` file to use npm according to the documentation.
+* Also removed all yarn artefacts from git.
+
+
+Yarn is still useful for building the website and pushing to the `gh-pages` branch (when **Deploy from a branch** is being used instead of **GitHub Actions**).
+
+```zsh
+corepack enable
+yarn install
+$ GIT_USER=<GitHub username> yarn deploy
 ```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
